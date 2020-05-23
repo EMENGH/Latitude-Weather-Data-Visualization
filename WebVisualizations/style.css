@@ -1,0 +1,36 @@
+html body{
+    height: 100%;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: lightgray;
+}
+
+.navbar .navbar-expanded .navbar-container{
+    background-color: #23415c;
+}
+
+
+
+
+.visual-container{
+    background-color: teal;
+}
+
+.footer-container{
+    display: flex;
+    min-height: 60px;
+    background-color: #23415c;
+    color: white;
+    align-items: center;
+    font-size: 10px;
+    justify-content: space-evenly;
+
+}
+.footer-item{
+    display: inline-block;
+    align-items: center;
+
+}
+
