@@ -1,36 +1,93 @@
 html body{
     height: 100%;
     width: 100%;
-    margin: 10px;
-    padding: 10px;
+    margin: 10px, 10px;
+    padding: 10px, 10px;
     box-sizing: border-box;
-    background-color: lightgray;
+    background-color:lightgray;
 }
 
-.navbar .navbar-expanded .navbar-container{
+
+/* navbar active navbar menu items */
+.navbar-light .navbar-nav .active>.nav-link,
+ .navbar-light .navbar-nav .nav-link.active,
+  .navbar-light .navbar-nav .nav-link.show,
+   .navbar-light .navbar-nav .show>.nav-link{
+    color: white;
+}
+
+/* latitude navbar home button */
+.navbar-light .navbar-brand {
+    color: white;
+    background-color: gray;
+}
+
+/* dropdown menu */
+.navbar-light .navbar-nav .nav-link{
+    color: white;
+}
+
+.navbar-light .navbar-toggler {
+    background-color: white;
+}
+.navbar{
     background-color: #23415c;
+    border: 30px;
+}
+
+/* .navbar-container navbar-custom{
+    padding: 10px;
+    margin: 10px;
+} */
+
+.middle-container{ 
+    padding: 10px;
+    margin: 10px;
+} 
+
+.page-body {
+    width: 100%;
+    background-color: white;
+    color: #23415c;
+	margin-top: 40px;
+	margin-bottom: 40px;
+    padding: 10px 30px 10px;
 }
 
 
-
-
-.visual-container{
-    background-color: teal;
+.visual-body {
+	margin-top: 40px;
+	margin-bottom: 20px;
+	padding: 10px 30px 40px;
+	color: black;
+	background-color: white;
+}
+.page-title, .visual-title {
+	padding-top: 15px; 
+	padding-left: 4px;
+	color: #23415c;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: Georgia, Times, "Times New Roman", serif;
 }
 
 .footer-container{
     display: flex;
+    flex-basis: 100%;
     min-height: 60px;
     background-color: #23415c;
     color: white;
     align-items: center;
-    font-size: 10px;
+    font-size: 12px;
     justify-content: space-evenly;
-
+    flex-flow: block;
+    padding: 0, 10px, 0, 10px;
+    margin: 0, 10px, 0, 10px;
 }
 .footer-item{
     display: inline-block;
     align-items: center;
 
 }
+
 
