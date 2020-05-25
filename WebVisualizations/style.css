@@ -6,7 +6,24 @@ html body{
     box-sizing: border-box;
     background-color:lightgray;
 }
+.navbar-brand{
+    margin-right:3rem;
+    margin-left:3rem;
+    margin-bottom:0.3rem;
+    padding-left:1rem;
+    padding-right:1rem;
+}
+.navbar-brand:hover{
+    background-color:darkgray;
+    border-color: white;
+    border-style:solid;
+}
 
+/* .navbar-dropdown:hover{
+    background-color:darkgray;
+    border-color: white;
+    border-style:solid;
+} */
 
 /* navbar active navbar menu items */
 .navbar-light .navbar-nav .active>.nav-link,
@@ -19,7 +36,9 @@ html body{
 /* latitude navbar home button */
 .navbar-light .navbar-brand {
     color: white;
-    background-color: gray;
+    background-color:#23415c;
+    border-color: white;
+    border-style: solid;
 }
 
 /* dropdown menu */
@@ -68,12 +87,19 @@ html body{
 
 .table{
     background-color:white;
-    width:95%;
-    justify-content:center;
-    padding:30px;
-    margin:30px;
-    display:block;
-    align-items:center;
+     /* width:95%;   */
+    /* justify-content:center; */
+    /* padding:30px; */
+    /* margin:30px; */
+    /* display:block; */
+    /* align-items:center; */
+}
+
+.visual-graph:hover{
+    border-style: solid;
+    border-color: darkblue;
+    opacity: 0.8;
+    transition: 0.5s;
 }
 
 .footer-container{
@@ -95,4 +121,28 @@ html body{
 
 }
 
+/* media queries */
 
+@media screen and (max-width: 780px){
+    .navbar{
+        background-color:rgb(1, 1, 49);
+        font-size:0.7em;
+    }
+    .table{
+        font-size:0.8em;
+    } 
+    .footer-container{
+        background-color:rgb(1, 1, 49);
+        font-size:0.7em;
+    }  
+}
+
+@media screen and (max-width: 520px){
+    .navbar{
+        background-color:rgb(1, 1, 49);
+        font-size:0.6em;
+    }
+    .table{
+        font-size:0.6em;
+    }   
+}
